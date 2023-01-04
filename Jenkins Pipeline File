@@ -22,6 +22,12 @@ pipeline {
                 echo 'Testing'
             }
         }
+        
+        stage('UAT') {
+            steps {
+                echo 'UAT Testing'
+            }
+        }
          stage('Release') {
             steps {
                 echo 'Releasing'
